@@ -8,7 +8,7 @@ import os
 
 # Setup speech engine once
 engine = pyttsx3.init()
-# Icon path (absolute path safer than relative)
+# Icon path
 icon_path = os.path.abspath("eye_icon.ico")
 if not os.path.exists(icon_path):
     print("Warning: Icon not found. Notifications will show without an icon.")
@@ -41,4 +41,5 @@ except KeyboardInterrupt:
 
 except Exception as e:
     print(e)
+
     
